@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .about,
+  .consult {
+    flex-direction: column;
+  }
+
+  .service-grid,
+  .disease-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
