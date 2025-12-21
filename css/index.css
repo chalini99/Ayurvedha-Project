@@ -1374,3 +1374,15 @@ body{
   z-index: 5;
   pointer-events: auto;
 }
+
+
+
+.logo {
+    height: 48px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
