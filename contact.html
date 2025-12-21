@@ -2,130 +2,296 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Aksharam Ayurved</title>
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/contact.css" />
 
-  <link rel="stylesheet" href="css/contact.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  We’re here to guide you on your healing journey
-</div>
-
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">
-    <span>Aksharam Ayurved</span>
-  </div>
-
-  <nav>
-    <a>Who We Are</a>
-    <a>Services</a>
-    <a>Resources</a>
-    <a class="active">Contact Us</a>
-  </nav>
-
-  <button class="btn-primary">Online Consultation →</button>
-</header>
-
-<!-- HERO -->
-<section class="inner-hero">
-  <div class="hero-overlay"></div>
-  <div class="inner-hero-content">
-    <span class="breadcrumb">Contact Us</span>
-    <h1>Connect With Aksharam Ayurved</h1>
-    <p>
-      Reach out for consultations, appointments, or any
-      Ayurvedic guidance you need.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="contact-page">
-
-  <div class="contact-grid">
-
-    <!-- FORM -->
-    <div class="contact-form">
-      <h2>Send Us a Message</h2>
+<!-- ================= NAVBAR (SAME AS OTHER PAGES) ================= -->
+<!-- ================= TOP INFO STRIP ================= -->
+<div class="top-info-bar">
+    <div class="marquee">
       <p>
-        Fill out the form and our team will get back to you shortly.
+        Expert Ayurvedic Consultations for Arthritis, Digestive Disorders, Diabetes,
+        Respiratory Issues, Gynecological Conditions, Skin & Hair Problems, and many
+        other Chronic and Lifestyle Disorders
       </p>
-
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message" rows="5"></textarea>
-        <button class="btn-primary" type="submit">
-          Submit Enquiry →
-        </button>
-      </form>
     </div>
-
-    <!-- CONTACT INFO -->
-    <div class="contact-info">
-      <h2>Contact Information</h2>
-
-      <div class="info-item">
-        <strong>📍 Address</strong>
-        <p>
-          Aksharam Ayurved Hospital<br>
-          Asarwa, Ahmedabad, Gujarat – 380016
-        </p>
-      </div>
-
-      <div class="info-item">
-        <strong>📞 Phone</strong>
-        <p>+91 94995 61561</p>
-      </div>
-
-      <div class="info-item">
-        <strong>💬 WhatsApp</strong>
-        <p>+91 85304 22103</p>
-      </div>
-
-      <div class="info-item">
-        <strong>✉️ Email</strong>
-        <p>aksharamayurved@gmail.com</p>
-      </div>
-
-      <div class="info-item">
-        <strong>⏰ Working Hours</strong>
-        <p>
-          Mon – Sat: 9:00 AM – 7:00 PM<br>
-          Sun: 10:00 AM – 2:00 PM (Emergency)
-        </p>
-      </div>
-    </div>
-
   </div>
-</section>
+  
+  
+  <!-- ================= NAVBAR ================= -->
+  <header class="main-navbar">
+    <div class="nav-container">
+  
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="image/logoBG.png" alt="JOGI Ayurved">
+      </div>
+  
+      <!-- Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="aboutUS.html">Who We Are <span></span></a>
+        <a href="servie.html">Services <span></span></a>
+        <a href="#" class="active">Contact Us</a>
+      </nav>
+  
+      <!-- CTA Button -->
+      <a href="#" class="nav-btn">
+        Online Consultation
+        <span>→</span>
+      </a>
+  
+      <!-- Mobile Toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+    </div>
+  </header>
+  
+  
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-hero-wrapper">
+    <div class="contact-hero">
+      <div class="contact-hero-overlay"></div>
+  
+      <div class="contact-hero-content">
+        <span class="subtitle">Connect with us</span>
+  
+        <h1>
+          Connect with our <br>
+          <span>Health Coach</span>
+        </h1>
+  
+        <p>
+          Get in touch with us for expert Ayurvedic care and
+          personalized health guidance.
+        </p>
+  
+        <a href="#" class="hero-btn">
+          Talk to Health Coach →
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <div class="contact-container">
+  
+      <!-- LEFT PANEL -->
+      <div class="contact-left">
+        <h2>Get In Touch</h2>
+  
+        <p class="desc">
+          Do not hesitate to reach out. Just fill in the contact form here and
+          one of our health coach will get back to you.
+        </p>
+  
+        <h4>Visit Our Hospital</h4>
+        <p class="address">
+          3rd Floor/4th Floor, Shreeji Arcade, A-301/401, Anand Mahal Rd,
+          behind Bhulka Bhawan School, Adajan Gam, Adajan, Surat, Gujarat – 395009
+        </p>
+  
+        <h4>Message Us</h4>
+  
+        <ul class="contact-info">
+          <li>consulting@jogiayurved.com</li>
+          <li>+91 9016166757 (For Online Consultation)</li>
+          <li>+91 81409 46153 (Hospital)</li>
+        </ul>
+  
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <span>f</span>
+          <span>in</span>
+          <span>ig</span>
+          <span>yt</span>
+        </div>
+      </div>
+  
+      <!-- RIGHT PANEL -->
+      <div class="contact-right">
+        <form class="contact-form">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Contact No.">
+          <input type="text" placeholder="City">
+          <textarea placeholder="Message"></textarea>
+  
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  
+    </div>
+  </section>
+  
 
-<!-- MAP -->
-<section class="map-section">
-  <iframe
-    src="https://www.google.com/maps?q=Asarwa,Ahmedabad,Gujarat&output=embed"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Ready to Book Your Consultation?</h2>
-  <button class="btn-primary">Book Appointment →</button>
-</section>
-
-<!-- WHATSAPP FLOAT -->
-<a class="whatsapp-float">💬</a>
-
-<script src="js/main.js"></script>
+  <section class="location-section">
+    <div class="location-container">
+  
+      <!-- CARD 1 -->
+      <div class="location-card">
+        <h3>JOGI Ayurved Hospital</h3>
+  
+        <div class="info">
+          <span>📍</span>
+          <p>
+            A-301/302, 3rd Floor, Shreeji Arcade, Behind Bhulka Bhawan School,
+            Anand Mahal Road, Adajan, Surat – 395009
+          </p>
+        </div>
+  
+        <div class="info">
+          <span>⏰</span>
+          <p>7:30 AM – 9:30 PM</p>
+        </div>
+  
+        <div class="info">
+          <span>✉️</span>
+          <p>jogiayurved@gmail.com</p>
+        </div>
+  
+        <div class="info">
+          <span>📞</span>
+          <p>
+            +91 81409 46153<br>
+            0261 2736499
+          </p>
+        </div>
+      </div>
+  
+      <!-- CARD 2 -->
+      <div class="location-card">
+        <h3>JOGI Online OPD</h3>
+  
+        <div class="info">
+          <span>⏰</span>
+          <p>
+            Monday – Saturday<br>
+            08:00 AM – 08:00 PM
+          </p>
+        </div>
+  
+        <div class="info">
+          <span>⏰</span>
+          <p>
+            Sunday<br>
+            09:30 AM – 06:00 PM
+          </p>
+        </div>
+  
+        <div class="info">
+          <span>✉️</span>
+          <p>jogiayurved@gmail.com</p>
+        </div>
+  
+        <div class="info">
+          <span>📞</span>
+          <p>+91 8800118053</p>
+        </div>
+      </div>
+  
+      <!-- CARD 3 -->
+      <div class="location-card">
+        <h3>JOGI Panchkarma Center</h3>
+  
+        <div class="info">
+          <span>📍</span>
+          <p>
+            2nd & 3rd Floor, Shagun Square, Ajara Amar Chawk,
+            Amidhara Wadi Road, Adajan, Surat, Gujarat – 395009
+          </p>
+        </div>
+  
+        <div class="info">
+          <span>⏰</span>
+          <p>08:00 AM – 08:00 PM</p>
+        </div>
+  
+        <div class="info">
+          <span>✉️</span>
+          <p>panchkarma.jogi@gmail.com</p>
+        </div>
+  
+        <div class="info">
+          <span>📞</span>
+          <p>+91 83203 05210</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+  
+      <!-- LEFT -->
+      <div class="footer-col brand">
+        <img src="image/logoBG.png" alt="JOGI Ayurved" class="footer-logo">
+  
+        <div class="social-icons">
+          <a href="#">f</a>
+          <a href="#">i</a>
+          <a href="#">▶</a>
+          <a href="#">in</a>
+        </div>
+  
+        <h4>Subscribe a Newsletter</h4>
+        <div class="newsletter">
+          <input type="email" placeholder="Email">
+          <span>↗</span>
+        </div>
+      </div>
+  
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+  
+      <!-- SERVICES -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">In-Person Consultation</a>
+        <a href="#">Online Consultation</a>
+        <a href="#">Panchkarma Treatment</a>
+        <a href="#">Garbh Sanskar</a>
+      </div>
+  
+      <!-- CONNECT -->
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p>aksharamayurved@gmail.com</p>
+        <p>+91 85304 22103 (For Online Consultation)</p>
+        <p>+91 94995 61561 (Hospital)</p>
+        <p>
+            Asarwa, Ahmedabad, Gujarat, India - 380016
+        </p>
+      </div>
+  
+    </div>
+  
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <p>©2025. Aksharam Ayurved </p>
+      <div class="footer-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
