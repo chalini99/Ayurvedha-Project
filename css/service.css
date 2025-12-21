@@ -1,0 +1,46 @@
+/* SERVICES PAGE */
+.services-page{
+    padding:120px 80px;
+  }
+  
+  .services-page h2{
+    font-family:"Playfair Display";
+    font-size:46px;
+    text-align:center;
+  }
+  
+  .services-grid{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+  }
+  
+  .service-box{
+    background:#fff;
+    border-radius:40px;
+    padding:40px;
+    transition:.3s ease;
+  }
+  
+  .service-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 30px 60px rgba(0,0,0,.08);
+  }
+  
+  .service-box h3{
+    font-family:"Playfair Display";
+    margin-bottom:14px;
+  }
+  
+  .service-box ul{
+    margin:20px 0;
+    padding-left:0;
+    list-style:none;
+  }
+  
+  .service-box ul li{
+    margin-bottom:10px;
+    font-size:15px;
+  }
+  
