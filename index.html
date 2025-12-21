@@ -3,40 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Aksharam Ayurved | Authentic Ayurveda</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Fonts (same premium feel as jogiayurved.com) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-<!-- TOP BAR -->
+<!-- ================= TOP INFO BAR ================= -->
 <div class="top-bar">
-  Expert Ayurvedic Consultations for Chronic & Lifestyle Disorders
+  🌿 Expert Ayurvedic Consultations for Chronic & Lifestyle Disorders
 </div>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="logo">
-    <!-- Replace later -->
-    <span>Aksharam Ayurved</span>
+  
+<div class="logo">
+  <a href="index.html">
+    <img src="assets/logo.png" alt="Aksharam Ayurved Logo" class="site-logo">
+  </a>
+</div>
+
+  <nav class="nav-links">
+
+  <div class="nav-dropdown">
+    <a href="aboutUS.html" class="nav-link">
+      Who We Are <span class="caret">˅</span>
+    </a>
+    <div class="dropdown-menu">
+      <a href="aboutUS.html">About Us</a>
+    </div>
   </div>
 
-  <nav>
-    <a>Who We Are</a>
-    <a>Services</a>
-    <a>Resources</a>
-    <a>Contact Us</a>
-  </nav>
+  <div class="nav-dropdown">
+    <a href="service.html" class="nav-link">
+      Services <span class="caret">˅</span>
+    </a>
+    <div class="dropdown-menu">
+      <a href="service.html">Our Services</a>
+    </div>
+  </div>
 
-  <button class="btn-primary">
-    Online Consultation →
+  <a href="#" class="nav-link">Resources</a>
+  <a href="contact.html" class="nav-link">Contact Us</a>
+
+</nav>
+
+
+  <button class="btn-primary desktop-cta">
+     Online Consultation →
   </button>
+
+<!-- MOBILE HAMBURGER -->
+<div class="hamburger" id="openMenu">☰</div>
+
 </header>
 
-<!-- HERO -->
+
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-menu-header">
+    <img src="assets/logo.png" alt="Aksharam Ayurved" class="site-logo">
+
+    <a href="contact.html" class="mobile-cta">
+      Online Consultation →
+    </a>
+
+    <span class="close-menu" id="closeMenu">✕</span>
+  </div>
+
+  <ul class="mobile-nav">
+    <li><a href="aboutUS.html">Who We Are <span>˅</span></a></li>
+    <li><a href="service.html">Services <span>˅</span></a></li>
+    <li><a href="#">Resources <span>˅</span></a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+
+</div>
+
+
+
+
+
+<!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-overlay"></div>
 
@@ -47,81 +101,394 @@
     </h1>
 
     <p>
-      Guided by Vaidya Dolly Solanki Makwana – BAMS, MD Panchakarma<br>
-      Trusted by 5000+ patients globally
+      Guided by <strong>Vaidya Dolly Solanki Makwana</strong> – BAMS, MD Panchakarma<br>
+      Trusted by 5000+ patients across the globe
     </p>
 
     <div class="hero-actions">
-      <button class="btn-primary">Book Tele-Consultation →</button>
-      <button class="btn-outline">Explore Panchakarma</button>
-    </div>
+  <a href="contact.html" class="btn-primary">
+    Book Tele-Consultation →
+  </a>
 
-    <span class="scroll-indicator">Scroll to explore ↓</span>
+  <a href="service.html#panchakarma" class="btn-outline">
+    Explore Panchakarma
+  </a>
+</div>
+
+    <span class="scroll-indicator">
+      Scroll to explore ↓
+    </span>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="about-image">
-    <div class="image-placeholder"></div>
-  </div>
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section" id="about">
+  <div class="about-container">
 
-  <div class="about-content">
-    <h2>About Aksharam Ayurved</h2>
-    <p>
-      At Aksharam Ayurved, we believe in timeless Ayurvedic wisdom combined with
-      modern scientific understanding to deliver root-cause healing.
-    </p>
-
-    <div class="stats">
-      <div class="stat">8+<span>Years of Care</span></div>
-      <div class="stat">5000+<span>Patients</span></div>
-      <div class="stat">9+<span>Countries</span></div>
+    <!-- LEFT IMAGE -->
+    <div class="about-image">
+      <img src="assets/about.jpg" alt="Ayurveda Therapy Room">
     </div>
 
-    <button class="btn-primary">More About Us →</button>
+    <!-- RIGHT CONTENT -->
+    <div class="about-content">
+      <h2>About Aksharam Ayurved</h2>
+
+      <p>
+        At Aksharam Ayurved, we practice classical Ayurveda rooted in ancient
+        texts while integrating modern diagnostic understanding. Our focus is
+        not symptom suppression but <strong>root-cause healing</strong>.
+      </p>
+
+      <p>
+        Each treatment plan is uniquely crafted after deep assessment of
+        Prakriti, Dosha imbalance, lifestyle, and mental well-being.
+      </p>
+
+      <!-- STATS -->
+      <!-- ORNAMENTAL STATS -->
+<div class="about-stats-ref">
+
+  <div class="stat-ref">
+    <div class="stat-inner">
+      <strong>8+</strong>
+      <span>Years Of Care</span>
+    </div>
+  </div>
+
+  <div class="stat-ref">
+    <div class="stat-inner">
+      <strong>5000+</strong>
+      <span>Patients Healed</span>
+    </div>
+  </div>
+
+  <div class="stat-ref">
+    <div class="stat-inner">
+      <strong>9+</strong>
+      <span>Countries Served</span>
+    </div>
+  </div>
+
+</div>
+
+<a href="aboutUS.html" class="about-btn-ref">
+  More About Us <span>→</span>
+</a>
+
+    </div>
+
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services">
-  <h2>Our Services</h2>
-  <p class="section-subtitle">
-    Authentic Ayurvedic therapies designed for long-lasting wellness.
-  </p>
 
-  <div class="service-grid">
-    <div class="service-card">
-      <div class="card-overlay"></div>
-      <h3>Online Consultation</h3>
-      <p>Personalized Ayurvedic guidance from anywhere in the world.</p>
-      <button>Learn More →</button>
+
+<section class="services-section" id="services">
+  <div class="services-container">
+
+    <div class="services-header">
+      <h2>Our Specialized Services</h2>
+      <p>Holistic Ayurvedic solutions tailored to your body, mind, and lifestyle.</p>
     </div>
 
-    <div class="service-card">
-      <div class="card-overlay"></div>
-      <h3>Panchakarma Treatment</h3>
-      <p>Five-step detox for deep cleansing and rejuvenation.</p>
-      <button>Learn More →</button>
-    </div>
+    <div class="services-grid">
 
-    <div class="service-card">
-      <div class="card-overlay"></div>
-      <h3>Beej Shuddhi</h3>
-      <p>Pre-conception purification for healthy progeny.</p>
-      <button>Learn More →</button>
+      <!-- Service Card -->
+      <div class="service-card">
+        <h3>Online Ayurvedic Consultation</h3>
+        <p>
+          Expert tele-consultations with Vaidya Dolly Solanki Makwana for patients across India and worldwide.
+        </p>
+        <ul>
+          <li>Gujarati, Hindi & English support</li>
+          <li>Personalized treatment plans</li>
+          <li>Medicine guidance & shipping support</li>
+        </ul>
+        <a href="contact.html" class="service-btn">Book Consultation →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Panchakarma Therapy</h3>
+        <p>
+          Classical 5-element detoxification therapies performed under expert supervision.
+        </p>
+        <ul>
+          <li>Vaman & Virechan</li>
+          <li>Basti & Nasya</li>
+          <li>Customized detox protocols</li>
+        </ul>
+        <a href="service.html#panchakarma" class="service-btn">Explore Panchakarma →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Beej Shuddhi & Garbhadhan Sanskar</h3>
+        <p>
+          Pre-conception purification programs for healthy progeny and reproductive wellness.
+        </p>
+        <ul>
+          <li>Hormonal balance</li>
+          <li>Fertility enhancement</li>
+          <li>Couple wellness programs</li>
+        </ul>
+        <a href="service.html#beej-shuddhi" class="service-btn">Learn More →</a>
+      </div>
+
+      <div class="service-card highlight">
+        <h3>Preventive Healthcare</h3>
+        <p>
+          Seasonal and constitution-based wellness programs focused on disease prevention.
+        </p>
+        <ul>
+          <li>Prakriti–Vikriti analysis</li>
+          <li>Lifestyle & diet planning</li>
+          <li>Ritucharya programs</li>
+        </ul>
+        <a href="service.html#preventive-care" class="service-btn">Start Wellness →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Chronic Disease Management</h3>
+        <p>
+          Ayurvedic management of long-standing health conditions by addressing root causes.
+        </p>
+        <ul>
+          <li>Diabetes & hypertension</li>
+          <li>Digestive disorders</li>
+          <li>Joint & lifestyle diseases</li>
+        </ul>
+        <a href="service.html#chronic-disease" class="service-btn">View Treatments →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Rejuvenation & Stress Relief</h3>
+        <p>
+          Rasayana therapies for vitality, immunity, anti-aging, and mental relaxation.
+        </p>
+        <ul>
+          <li>Stress management</li>
+          <li>Weight balance</li>
+          <li>Energy restoration</li>
+        </ul>
+        <a href="service.html#rejuvenation" class="service-btn">Rejuvenate →</a>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+
+
+<!-- ================= PATIENT TESTIMONIALS ================= -->
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-container">
+
+    <div class="testimonials-header">
+      <h2>Patient Testimonials & Success Stories</h2>
+      <p>Real Stories, Real Healing</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <p>
+          We were recommended Aksharam Ayurved and Dr. Dolly ma’am, and it turned out
+          to be the best decision of our life. Initially we were skeptical about online
+          Panchakarma, but after consulting her, we felt complete trust. The treatment
+          helped us not only lose stubborn weight but also achieve pregnancy naturally
+          after struggling for 2 years. Highly recommended for anyone on their
+          conception journey.
+        </p>
+         <div class="stars">★★★★★</div>
+        <h4>Payal Tank</h4>
+        <span>Nasik, Maharashtra</span>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <p>
+          Me and my wife underwent Panchakarma treatment under Dr. Dolly’s guidance.
+          Our body felt light, energetic, and detoxified. She explained every step
+          scientifically and was always available during the treatment. Vast knowledge
+          of Ayurveda. Highly recommendable.
+        </p>
+         <div class="stars">★★★★★</div>
+        <h4>Manthan Rathod</h4>
+        <span>ISRO Scientist, Ahmedabad</span>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <p>
+          I completed Panchakarma treatment in Florida, USA with Dr. Dolly from India.
+          My cholesterol, lipid profile, and A1c levels returned to normal after detox.
+          I lost 25 pounds and feel rejuvenated. Truly life-changing experience.
+        </p>
+         <div class="stars">★★★★★</div>
+        <h4>Dipak Jaiswal</h4>
+        <span>USA</span>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card">
+        <p>
+          Panchakarma consultancy with Dr. Dolly benefited me greatly. She combines
+          Ayurvedic science with spiritual and emotional knowledge. Personal care,
+          vast experience, and genuine guidance. Thank you for your attention and care.
+        </p>
+         <div class="stars">★★★★★</div>
+        <h4>Hardik Mehta</h4>
+        <span>Sanand, Gujarat</span>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="testimonial-card">
+        <p>
+          Aapke ilaaj aur vaman chikitsa ke baad mujhe itna sukoon mila jo lafzon mein
+          bayan nahi kar sakti. Positivity aur himmat ka naya ehsaas mila hai.
+          Aap jaise doctor milna ek barkat hai.
+        </p>
+         <div class="stars">★★★★★</div>
+        <h4>Jenifar Bagban</h4>
+        <span>Ahmedabad, Gujarat</span>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="testimonial-card">
+        <p>
+          Panchakarma treatment under Dr. Dolly helped control my PCOD and hypertension.
+          I feel energetic and learned valuable Ayurvedic lifestyle and food habits.
+          Very impactful guidance for me and my family.
+        </p>
+        <div class="stars">★★★★★</div>
+        <h4>Iti Parikh</h4>
+        <span>Ahmedabad, Gujarat</span>
+      </div>
+
+      <!-- Testimonial 7 -->
+     
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- ================= CONSULTATION SECTION ================= -->
+<section class="consultation-section" id="consultation">
+  <div class="consultation-wrapper">
+
+    <!-- LEFT FORM -->
+    <div class="consultation-form">
+
+      <h2>Schedule Your Consultation</h2>
+      <p class="consultation-subtitle">
+        Fill out the form to book an appointment with our ayurvedic experts.
+        We’ll get back to you within 24 hours to confirm your slot.
+      </p>
+
+      <form>
+        <!-- Appointment Type -->
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="type" checked>
+            Offline Consultation
+          </label>
+          <label>
+            <input type="radio" name="type">
+            Online Consultation
+          </label>
+        </div>
+
+        <input type="text" placeholder="Full Name" required>
+
+        <div class="two-col">
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Contact No." required>
+        </div>
+
+        <textarea placeholder="Additional Information" rows="4"></textarea>
+
+        <label class="checkbox">
+          <input type="checkbox" required>
+          I agree to the terms and conditions, privacy policy.
+        </label>
+
+        <button type="submit" class="submit-btn">
+          Submit Request
+        </button>
+      </form>
+
+    </div>
+
+    <!-- RIGHT INFO -->
+    <div class="consultation-info">
+
+      <h3>Message Us</h3>
+
+      <div class="info-line">✉️ aksharamayurved@gmail.com</div>
+      <div class="info-line">📞 +91 94995 61561 (Phone)</div>
+      <div class="info-line">💬 +91 85304 22103 (WhatsApp)</div>
+
+      <h3>Working Hours</h3>
+
+      <div class="hours">
+        <strong>Hospital</strong>
+        <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+        <span>Sun: 10:00 AM – 2:00 PM (Emergency)</span>
+      </div>
+
+      <h3>Location</h3>
+      <p>
+        Aksharam Ayurved Hospital<br>
+        Asarwa, Ahmedabad, Gujarat – 380016
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= CTA ================= -->
+<!-- ================= CTA ================= -->
 <section class="cta">
-  <h2>Ready to Begin Your Healing Journey?</h2>
-  <button class="btn-primary">Book Consultation Today →</button>
+  <div class="cta-inner">
+    <h2>Ready to Begin Your Healing Journey?</h2>
+    <p>
+      Book your consultation today and experience authentic Ayurveda.
+    </p>
+    <a href="contact.html" class="btn-primary">
+      Book Consultation Today →
+    </a>
+  </div>
 </section>
 
-<!-- WHATSAPP FLOAT -->
-<a class="whatsapp-float">💬</a>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    © 2025 Aksharam Ayurved. All Rights Reserved.
+  </div>
+</footer>
+
 
 <script src="js/index.js"></script>
 </body>
