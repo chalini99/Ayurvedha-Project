@@ -69,7 +69,7 @@ body{
   height:85vh;
   background:
     linear-gradient(rgba(10,40,40,.75),rgba(10,40,40,.75)),
-    url("../assets/about.jpg") center/cover no-repeat;
+    url("../assets/dr.jpeg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -94,6 +94,14 @@ body{
   font-size:18px;
   color:#eef5f3;
 }
+
+
+
+
+
+
+
+
 
 /* ================= SECTIONS ================= */
 .section{
@@ -510,5 +518,116 @@ body{
   .footer-col,
   .footer-brand{
     margin-bottom:30px;
+  }
+}
+
+
+/* ================= SERVICE CARD BUTTON FIX ================= */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card ul {
+  margin-bottom: 24px;
+}
+
+/* BUTTON WRAPPER */
+.service-card .service-btn {
+  margin-top: auto;              /* 🔥 PUSH BUTTON TO BOTTOM */
+  align-self: flex-start;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+  min-height: 44px;              /* 🔥 SAME HEIGHT */
+  min-width: 180px;              /* 🔥 SAME WIDTH */
+
+  border-radius: 28px;
+  background: #8fa35f;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.service-card .service-btn:hover {
+  background: #7c9152;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .service-card .service-btn {
+    align-self: center;          /* center on mobile */
+  }
+}
+
+
+/* ================= CTA SECTION ================= */
+
+.cta {
+  padding: 100px 20px;
+  text-align: center;
+
+  /* 🔥 ORANGE BACKGROUND */
+  background: linear-gradient(
+    135deg,
+     /* warm orange */
+    #A86F3F  /* soft saffron */
+  );
+
+  color: #edeaea;
+}
+
+.cta-inner {
+  max-width: 900px;
+  margin: auto;
+}
+
+.cta h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* CTA BUTTON */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 38px;
+  border-radius: 40px;
+
+  background: #6a9859;
+  color: #e8dcd4;              /* dark orange text */
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 15px;
   }
 }
