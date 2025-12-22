@@ -68,3 +68,11 @@ window.addEventListener("mousemove", e => {
 
   hero.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
 });
+
+
+const mobileBtn = document.getElementById("mobileMenuBtn");
+const navLinks = document.querySelector(".nav-links");
+
+mobileBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
