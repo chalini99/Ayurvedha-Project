@@ -44,3 +44,18 @@ const navLinks = document.querySelector(".nav-links");
 mobileBtn.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
+
+ const revealElements = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    const trigger = window.innerHeight * 0.85;
+
+    revealElements.forEach(el => {
+      if (el.getBoundingClientRect().top < trigger) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
