@@ -65,6 +65,9 @@ body{
 }
 
 /* ================= HERO ================= */
+
+
+
 .about-hero{
   height:85vh;
   background:
@@ -74,7 +77,12 @@ body{
   align-items:center;
   justify-content:center;
   text-align:center;
+
+  overflow:hidden; /* ✅ THIS FIXES IT */
 }
+
+
+
 
 .hero-inner{
   max-width:900px;
@@ -241,82 +249,50 @@ body{
 /* ================= GLOBAL IMPACT ================= */
 
 /* ================= GLOBAL IMPACT ================= */
-
 .global{
   text-align:center;
-  position:relative;
 }
-
-/* ================= STATS ================= */
 
 .stats{
   display:flex;
   justify-content:center;
-  gap:36px;
-  margin-top:48px;
+  gap:30px;
+  margin-top:40px;
 }
 
 .stat{
-  position:relative;
-  padding:20px 36px;
+  padding:18px 34px;
   border-radius:999px;
   background:linear-gradient(135deg,var(--green),#6e7f45);
   color:#fff;
   font-weight:600;
-  font-size:16px;
-  box-shadow:0 14px 30px rgba(0,0,0,.15);
-  transition:transform .35s ease,
-             box-shadow .35s ease,
-             filter .35s ease;
-  overflow:hidden;
+  transition:.4s;
 }
 
-/* ✨ soft inner light */
-.stat::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(
-    circle at top left,
-    rgba(255,255,255,.35),
-    transparent 65%
-  );
-  opacity:.35;
-  transition:opacity .35s ease;
-}
-
-/* 🌿 refined hover */
 .stat:hover{
-  transform:translateY(-8px);
-  box-shadow:0 28px 55px rgba(38,75,63,.35);
-  filter:brightness(1.08);
-}
-
-.stat:hover::after{
-  opacity:.6;
+  transform:translateY(-8px) scale(1.08);
 }
 
 /* ================= PHILOSOPHY ================= */
-
 .philosophy{
-  background:linear-gradient(180deg,#184A4A,#0c3333);
+  background:linear-gradient(135deg,#184A4A,#0c3333);
   color:#fff;
   text-align:center;
-  position:relative;
-  overflow:hidden;
 }
 
-/* 🌫 subtle ambient glow */
-.philosophy::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(
-    circle at center,
-    rgba(127,182,133,.15),
-    transparent 70%
-  );
+.philosophy blockquote{
+  font-size:26px;
+  max-width:900px;
+  margin:auto;
+  font-style:italic;
 }
+
+.philosophy span{
+  display:block;
+  margin-top:20px;
+  opacity:.85;
+}
+
 
 /* ================= QUOTE ================= */
 
@@ -630,6 +606,139 @@ body{
   pointer-events: auto;
 }
 
+
+
+
+@media (max-width: 640px){
+  .services-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .service-card{
+    padding:24px 22px;
+    border-radius:22px;
+  }
+
+  .service-card h3{
+    font-size:20px;
+    line-height:1.3;
+  }
+
+  .service-card p,
+  .service-card li{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .service-card button{
+    width:100%;
+    text-align:center;
+  }
+}
+@media (hover: none){
+  .service-card:hover{
+    transform:none;
+    box-shadow:none;
+  }
+}
+@media (max-width: 640px){
+
+  .service-card{
+    padding:22px 20px 26px;
+    border-radius:22px;
+  }
+
+  .service-card h3{
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:12px;
+  }
+
+  .service-card p{
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .service-card ul{
+    padding-left:16px;
+  }
+
+  .service-card ul li{
+    font-size:13.5px;
+    line-height:1.45;
+  }
+
+  .service-card button{
+    margin-top:auto;
+    width:100%;
+    font-size:14px;
+    padding:12px 0;
+  }
+}
+/* ================= SERVICES GRID ================= */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* ================= SERVICE CARD ================= */
+.service-card{
+  background:#f9fdfb;
+  border-radius:32px;
+  padding:28px 24px 26px;
+  display:flex; 
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:460px;
+  border:1px solid rgba(143,161,90,.25);
+  overflow:hidden;
+}
+
+/* TITLE */
+.service-card h3{
+  font-family:"Playfair Display",serif;
+  font-size:22px;
+  color:#184A4A;
+  margin-bottom:14px;
+}
+
+/* DESCRIPTION */
+.service-card p{
+  font-size:15px;
+  line-height:1.7;
+  color:#344;
+  margin-bottom:18px;
+}
+
+/* BULLETS */
+.service-card ul{
+  padding-left:18px;
+  margin-bottom:20px;
+}
+
+.service-card ul li{
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+/* BUTTON FIX (IMPORTANT) */
+.service-card .btn-primary{
+  margin-top:auto;
+  align-self:flex-start;
+  padding:12px 24px;
+  font-size:14px;
+  border-radius:999px;
+}
+
+
+
+
+
+
+
+
 /* ================= MOBILE NAV ================= */
 
 .mobile-menu-btn{
@@ -883,3 +992,23 @@ body{
 }
 
 
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    z-index:999;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-float:hover{
+    transform:scale(1.1);
+    box-shadow:0 12px 35px rgba(0,0,0,0.4);
+  }

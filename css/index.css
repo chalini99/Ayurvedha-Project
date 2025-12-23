@@ -691,7 +691,7 @@ body{
 }
 
 .wellness-card{
-  background:rgba(255,255,255,.65);
+  background:rgba(235, 239, 238, 0.95);
   backdrop-filter:blur(18px);
   border-radius:28px;
   padding:34px 26px;
@@ -2156,3 +2156,47 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+.form-checkbox{
+  display:flex;
+  align-items:flex-start;   /* aligns checkbox with first line */
+  gap:12px;
+  margin:28px 0 36px;
+}
+
+.form-checkbox input[type="checkbox"]{
+  margin-top:4px;           /* small visual correction */
+  width:16px;
+  height:16px;
+  accent-color:#8FA15A;     /* theme green */
+  cursor:pointer;
+}
+
+.form-checkbox label{
+  font-size:14px;
+  color:#1f2f2f;
+  line-height:1.6;
+  cursor:pointer;
+}
+
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    z-index:999;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-float:hover{
+    transform:scale(1.1);
+    box-shadow:0 12px 35px rgba(0,0,0,0.4);
+  }
