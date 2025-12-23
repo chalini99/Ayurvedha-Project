@@ -594,48 +594,7 @@ body{
 
 }
 
-/* FIX: allow clicks on service buttons */
-.service-card::before,
-.service-card::after{
-  pointer-events: none;
-}
 
-.service-btn{
-  position: relative;
-  z-index: 5;
-  pointer-events: auto;
-}
-
-
-
-
-@media (max-width: 640px){
-  .services-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-
-  .service-card{
-    padding:24px 22px;
-    border-radius:22px;
-  }
-
-  .service-card h3{
-    font-size:20px;
-    line-height:1.3;
-  }
-
-  .service-card p,
-  .service-card li{
-    font-size:14px;
-    line-height:1.6;
-  }
-
-  .service-card button{
-    width:100%;
-    text-align:center;
-  }
-}
 @media (hover: none){
   .service-card:hover{
     transform:none;
@@ -723,17 +682,22 @@ body{
   margin-bottom:10px;
 }
 
-/* BUTTON FIX (IMPORTANT) */
-.service-card .btn-primary{
-  margin-top:auto;
-  align-self:flex-start;
-  padding:12px 24px;
-  font-size:14px;
-  border-radius:999px;
+
+
+@media (max-width:640px){
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+
+  .service-card{
+    height:auto;
+  }
+
+  .btn-primary{
+    width:100%;
+    text-align:center;
+  }
 }
-
-
-
 
 
 
@@ -872,55 +836,116 @@ body{
 
 /* ================= SERVICE CARD BUTTON FIX ================= */
 
-.service-card {
-  display: flex;
-  flex-direction: column;
+/* ================= SERVICES GRID ================= */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
 }
 
-.service-card ul {
-  margin-bottom: 24px;
+/* ================= SERVICE CARD ================= */
+.service-card{
+  background:#f9fdfb;
+  border-radius:32px;
+  padding:28px 24px 26px;
+  display:flex;
+  flex-direction:column;
+  min-height:460px;
+  border:1px solid rgba(143,161,90,.25);
+  overflow:hidden;
+  position:relative;
 }
 
-/* BUTTON WRAPPER */
-.service-card .service-btn {
-  margin-top: auto;              /* 🔥 PUSH BUTTON TO BOTTOM */
-  align-self: flex-start;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 12px 22px;
-  min-height: 44px;              /* 🔥 SAME HEIGHT */
-  min-width: 180px;              /* 🔥 SAME WIDTH */
-
-  border-radius: 28px;
-  background: #8fa35f;
-  color: #fff;
-
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-
-  transition: all 0.3s ease;
+/* disable pseudo layers from blocking */
+.service-card::before,
+.service-card::after{
+  pointer-events:none;
 }
 
-/* HOVER */
-.service-card .service-btn:hover {
-  background: #7c9152;
-  transform: translateY(-2px);
+/* ================= CONTENT ================= */
+.service-card h3{
+  font-family:"Playfair Display",serif;
+  font-size:22px;
+  color:#184A4A;
+  margin-bottom:14px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .service-card .service-btn {
-    align-self: center;          /* center on mobile */
+.service-card p{
+  font-size:15px;
+  line-height:1.7;
+  color:#344;
+  margin-bottom:18px;
+}
+
+.service-card ul{
+  padding-left:18px;
+  margin-bottom:20px;
+}
+
+.service-card ul li{
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+/* ================= BUTTON FIX ================= */
+.service-card .btn-primary{
+  margin-top:auto;                 /* pushes button down */
+  align-self:center;               /* CENTER FIX */
+  padding:12px 26px;
+  font-size:14px;
+  border-radius:999px;
+  z-index:5;
+  width:auto;
+}
+
+/* ================= MOBILE FIX (ONLY ONE) ================= */
+@media (max-width:640px){
+
+  .services-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .service-card{
+    padding:24px 20px 26px;
+    border-radius:22px;
+    min-height:auto;
+  }
+
+  .service-card h3{
+    font-size:20px;
+    margin-bottom:12px;
+    text-align:center;
+  }
+
+  .service-card p{
+    font-size:14px;
+    text-align:center;
+  }
+
+  .service-card ul{
+    padding-left:16px;
+  }
+
+  .service-card ul li{
+    font-size:13.5px;
+    line-height:1.45;
+  }
+
+  .service-card .btn-primary{
+    width:100%;                    /* FULL WIDTH ON MOBILE */
+    text-align:center;
+    padding:13px 0;
   }
 }
 
-
-
-
+/* ================= TOUCH DEVICES ================= */
+@media (hover:none){
+  .service-card:hover{
+    transform:none;
+    box-shadow:none;
+  }
+}
 
 
 
